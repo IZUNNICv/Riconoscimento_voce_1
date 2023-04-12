@@ -6,5 +6,5 @@ microfono = reconocimiento_voz.Microphone()
 with microfono as source:
     audio = reconocimiento.listen(source)
 
-text = reconocimiento.recognize_google(audio, language='es')  # Corregir 'lenguage' a 'language' y usar 'es' en minúsculas
-print(f'HAS DICHO: {text}')  # Corregir 'HAI DETTO' a 'HAS DICHO' y agregar f antes de la cadena para formatear la variable 'text'
+text = reconocimiento.recognize_google(audio, language='es')  
+print(f'HAS DICHO: {text}')  
